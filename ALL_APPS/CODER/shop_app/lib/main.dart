@@ -1,6 +1,5 @@
-// Pasta: 8
-//  video 24
-// Reassistir a aula 9 para entender melhor
+// Folder: 8
+//  video 25
 
 // Disciplina
 // Trabalho duro
@@ -13,6 +12,7 @@ import 'utils/app_routes.dart';
 import 'package:provider/provider.dart';
 import 'providers/products.dart';
 import 'providers/cart.dart';
+import 'views/cart_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
         home: ProductOverviewScreen(),
         routes: {
           AppRoutes.PRODUCT_DETAIL: (ctx) => ProductDetailScreen(),
+          AppRoutes.CART: (ctx) => CartScreen(),
         },
       ),
     );
