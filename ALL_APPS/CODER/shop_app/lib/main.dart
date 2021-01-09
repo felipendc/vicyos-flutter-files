@@ -1,9 +1,5 @@
 // Folder: 8
-//  video 25
-
-// Disciplina
-// Trabalho duro
-// Talento
+// Next video 26
 
 import 'package:flutter/material.dart';
 import 'views/products_overview_screen.dart';
