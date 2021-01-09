@@ -1,5 +1,5 @@
 // Folder: 8
-// Next video to be watched: 32
+// Next video to be watched: 33
 
 import 'package:flutter/material.dart';
 import 'package:shop_app/providers/orders.dart';
@@ -37,8 +37,9 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.deepOrange,
           fontFamily: 'Lato',
         ),
-        home: ProductOverviewScreen(),
+        // home: ProductOverviewScreen(),
         routes: {
+          AppRoutes.HOME: (ctx) => ProductOverviewScreen(),
           AppRoutes.PRODUCT_DETAIL: (ctx) => ProductDetailScreen(),
           AppRoutes.CART: (ctx) => CartScreen(),
           AppRoutes.ORDERS: (ctx) => OrdersScreen(),
