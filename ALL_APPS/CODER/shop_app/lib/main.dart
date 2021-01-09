@@ -1,7 +1,8 @@
 // Folder: 8
-// Next video 29
+// Next video 30
 
 import 'package:flutter/material.dart';
+import 'package:shop_app/providers/orders.dart';
 import 'views/products_overview_screen.dart';
 import 'views/product_detail_screen.dart';
 import 'utils/app_routes.dart';
@@ -22,6 +23,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (_) => Cart(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => Orders(),
         ),
       ],
       child: MaterialApp(
