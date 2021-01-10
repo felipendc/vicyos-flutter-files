@@ -1,5 +1,5 @@
 // Folder: 8
-// Next video to be watched: 34
+// Next video to be watched: Finished!
 
 import 'package:flutter/material.dart';
 import 'package:shop_app/providers/orders.dart';
