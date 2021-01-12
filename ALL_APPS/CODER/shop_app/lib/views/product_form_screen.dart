@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class ProductFormScreen extends StatefulWidget {
   @override
@@ -17,6 +18,18 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
             onPressed: () {},
           ),
         ],
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Form(
+            child: ListView(
+          children: [
+            TextFormField(
+              decoration: InputDecoration(labelText: 'Título'),
+              textInputAction: TextInputAction.next,
+            ),
+          ],
+        )),
       ),
     );
   }
