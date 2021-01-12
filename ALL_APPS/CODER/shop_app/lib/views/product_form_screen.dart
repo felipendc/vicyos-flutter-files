@@ -107,6 +107,8 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
                         : FittedBox(
                             child: Image.network(
                               _imageUrlController.text,
+                              width: 100,
+                              height: 100,
                             ),
                             fit: BoxFit.cover,
                           ),
