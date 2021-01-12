@@ -10,6 +10,15 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
   @override
   Widget build(BuildContext context) {
     final _priceFocusNode = FocusNode();
+    final _descriptionFocusNode = FocusNode();
+
+    @override
+    void dispose() {
+      super.dispose();
+      _priceFocusNode.dispose();
+      _descriptionFocusNode.dispose();
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Formulário Produto'),
@@ -37,6 +46,16 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
                 textInputAction: TextInputAction.next,
                 focusNode: _priceFocusNode,
                 keyboardType: TextInputType.numberWithOptions(decimal: true),
+                onFieldSubmitted: (_) {
+                  FocusScope.of(context).requestFocus(_descriptionFocusNode);
+                },
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: 'Descrição'),
+                maxLines: 3,
+                keyboardType: TextInputType.multiline,
+                textInputAction: TextInputAction.next,
+                focusNode: _descriptionFocusNode,
               ),
             ],
           ),
