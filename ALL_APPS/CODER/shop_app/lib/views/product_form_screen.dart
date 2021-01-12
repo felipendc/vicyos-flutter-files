@@ -29,7 +29,7 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
                 decoration: InputDecoration(labelText: 'Título'),
                 textInputAction: TextInputAction.next,
                 onFieldSubmitted: (_) {
-                  FocusScope.of(context).requestFocus(_priceFocusNode)
+                  FocusScope.of(context).requestFocus(_priceFocusNode);
                 },
               ),
               TextFormField(
