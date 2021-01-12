@@ -1,9 +1,10 @@
 // Folder: 9
-// Next video to be watched: 6
+// Next video to be watched: 7
 
 import 'package:flutter/material.dart';
 import 'package:shop_app/providers/orders.dart';
 import 'package:shop_app/views/orders_screen.dart';
+import 'package:shop_app/views/products_screen.dart';
 import 'views/products_overview_screen.dart';
 import 'views/product_detail_screen.dart';
 import 'utils/app_routes.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
           AppRoutes.PRODUCT_DETAIL: (ctx) => ProductDetailScreen(),
           AppRoutes.CART: (ctx) => CartScreen(),
           AppRoutes.ORDERS: (ctx) => OrdersScreen(),
+          AppRoutes.PRODUCTS: (ctx) => ProductsScreen(),
         },
       ),
     );
