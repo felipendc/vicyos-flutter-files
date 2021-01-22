@@ -3,6 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shop_app/providers/product.dart';
+import 'package:provider/provider.dart';
+import 'package:shop_app/providers/products.dart';
 
 class ProductFormScreen extends StatefulWidget {
   @override
@@ -69,6 +71,10 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
       description: _formData['description'],
       imageUrl: _formData['imageUrl'],
     );
+
+    Provider.of<Products>(context, listen: false).addProduct(newProduct);
+    Navigator.of(context).pop();
+
     print(newProduct.id);
     print(newProduct.title);
     print(newProduct.price);
@@ -173,7 +179,7 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
                       validator: (value) {
                         bool isEmptyUrl = value.trim().isEmpty;
                         bool isinvalidUrl = isValidImageUrl(value);
-                        if (isinvalidUrl || isEmptyUrl) {
+                        if (!isinvalidUrl || isEmptyUrl) {
                           return 'Informe uma URL válida!';
                         }
                         return null;

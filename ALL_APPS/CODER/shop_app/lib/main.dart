@@ -1,6 +1,5 @@
 // Folder: 9
-// Next video to be watched: 17
-// Review the video 16! ImageUrl error!
+// Next video to be watched: 18
 
 import 'package:flutter/material.dart';
 import 'package:shop_app/providers/orders.dart';
