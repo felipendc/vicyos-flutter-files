@@ -55,11 +55,10 @@
 # nesse caso seria: o "*"
 exemplo_um = print(3 * 3 + 3 / 3 - 3)
 
-
 # nesse caso seria: o "/"
 exemplo_dois = print(3 / 3 + 3 * 3 - 3)
 
-# nesse caso seria: o "/"
+# nesse caso seria: os parênteses "()"
 exemplo_tres = print(3 * (3 + 3) / 3 - 3)
 
 # exemplo_um:
