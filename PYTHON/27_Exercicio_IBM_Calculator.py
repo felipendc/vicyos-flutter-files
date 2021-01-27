@@ -7,7 +7,7 @@ bmi = float(peso) / (float(altura) * float(altura))
 
 
 # Converter os números float para inteiros:
-bmi_as_int = bmi
+bmi_as_int = int(bmi)
 
 # Printar a resposta com números inteiros:
 print(bmi_as_int)
