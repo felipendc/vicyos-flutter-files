@@ -12,3 +12,18 @@ anos_totais = (meses_do_ano * 90) - (int(idade) * meses_do_ano)
 
 print(
     f"You have {dias_totais} days, {semanas_totais} weeks, and {anos_totais} months left.")
+
+
+# Aqui está uma forma muito mais simples:
+#     # 🚨 Don't change the code below 👇
+# age = input("What is your current age? ")
+# # 🚨 Don't change the code above 👆
+
+# #Write your code below this line 👇
+
+# years = 90 - int(age)
+# months = round(years * 12)
+# weeks = round(years * 52)
+# days = round(years * 365)
+
+# print(f"You have {days} days, {weeks} weeks, and {months} months left.")
