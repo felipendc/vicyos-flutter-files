@@ -1,14 +1,14 @@
 altura = input("Digite a sua altura em metros: ")
 peso = input("Digite a sua peso em kg: ")
 
-resultado = float(peso) / (float(altura) * float(altura))
-print(resultado)
+# Converte as vareáveis "altura" e "peso" de String para float:
+bmi = float(peso) / (float(altura) * float(altura))
 
+# Converter os números float para inteiros:
+bmi_as_int = bmi
 
-# if b > a:
-#   print("b is greater than a")
-# elif a == b:
-#   print("a and b are equal")
+# Printar a resposta com números inteiros:
+print(bmi_as_int)
 
 
 # O código acima faz o seguinte calculo:
