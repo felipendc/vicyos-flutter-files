@@ -5,6 +5,12 @@ resultado = float(peso) / (float(altura) * float(altura))
 print(resultado)
 
 
+# if b > a:
+#   print("b is greater than a")
+# elif a == b:
+#   print("a and b are equal")
+
+
 # O código acima faz o seguinte calculo:
 # peso % altura * altura = resultado
 
