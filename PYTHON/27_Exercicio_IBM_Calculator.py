@@ -3,6 +3,8 @@ peso = input("Digite a sua peso em kg: ")
 
 # Converte as vareáveis "altura" e "peso" de String para float:
 bmi = float(peso) / (float(altura) * float(altura))
+# Opcional: bmi = float(peso) / altura ** 2
+
 
 # Converter os números float para inteiros:
 bmi_as_int = bmi
