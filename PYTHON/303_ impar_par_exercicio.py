@@ -5,7 +5,7 @@
 # caso contrário, o número é impar.
 
 
-numero = int(input("Qual é o número que você gostaria de checar?"))
+numero = int(input("Qual é o número que você gostaria de checar? "))
 
 resultado = numero % 2
 
