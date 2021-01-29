@@ -11,6 +11,6 @@ if ano % 4 == 0:
         else:
             print(f"{ano} não é um ano bissexto")
     else:
-        print(f"{ano} não é um ano bissexto")
+        print(f"{ano} é um ano bissexto")
 else:
     print(f"{ano} não é um ano bissexto")
