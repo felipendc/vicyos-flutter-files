@@ -17,7 +17,7 @@ nome_2_love = 0
 
 # Quantidades que as letras T R U E se repetem no nome 1:
 # Adicional: o contra-barra está sendo usado aqui para eu poder pular a linha
-# mas, para o enterpretador:
+# mas, para o enterpretador é com se o código continuasse na mesma linha:
 nome_1_true += nome1_lower.count("t") + \
     nome1_lower.count("r") + \
     nome1_lower.count("u") + \
@@ -25,7 +25,7 @@ nome_1_true += nome1_lower.count("t") + \
 
 # Quantidades que as letras T R U E se repetem no nome 2:
 # Adicional: o contra-barra está sendo usado aqui para eu poder pular a linha
-# mas, para o enterpretador:
+# mas, para o enterpretador é com se o código continuasse na mesma linha:
 nome_2_true += nome2_lower.count("t") + \
     nome2_lower.count("r") + \
     nome2_lower.count("u") + \
@@ -34,7 +34,7 @@ nome_2_true += nome2_lower.count("t") + \
 
 # Quantidades que as letras L O V E se repetem no nome 1:
 # Adicional: o contra-barra está sendo usado aqui para eu poder pular a linha
-# mas, para o enterpretador:
+# mas, para o enterpretador é com se o código continuasse na mesma linha:
 nome_1_love += nome1_lower.count("l") + \
     nome1_lower.count("o") + \
     nome1_lower.count("v") + \
@@ -42,7 +42,7 @@ nome_1_love += nome1_lower.count("l") + \
 
 # Quantidades que as letras L O V E se repetem no nome 2
 # Adicional: o contra-barra está sendo usado aqui para eu poder pular a linha
-# mas, para o enterpretador:
+# mas, para o enterpretador é com se o código continuasse na mesma linha:
 nome_2_love += nome2_lower.count("l") + \
     nome2_lower.count("o") + \
     nome2_lower.count("v") + \
