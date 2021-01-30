@@ -45,11 +45,12 @@ nome_2_love += nome2_lower.count("l") + \
 total_de_true = nome_1_true + nome_2_true
 total_de_love = nome_1_love + nome_2_love
 
-# JUNTAR O TOTAL DE total_de_true total_de_love usando o F-STRING do Python e transformando-o em um numero inteiro
-# para eu poder fazer cálculos matemáticos com ele, caso for preciso.
+# JUNTAR O TOTAL DE "total_de_true" com o  "total_de_love" usando o F-"STRING" do Python
+# e transformando-o em um numero inteiro para eu poder fazer cálculos matemáticos com ele, caso for preciso.
 juntar_true_e_love = int(f"{total_de_true}{total_de_love}")
 
 
+# Testar a saída código
 print(f"total de true: {total_de_true}")
 print(f"total de love: {total_de_love}")
 print(f"total de true e love: {juntar_true_e_love}")
