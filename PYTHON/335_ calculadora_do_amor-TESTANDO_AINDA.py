@@ -29,7 +29,6 @@ nome_2_true += nome2_lower.count("t") + \
     nome2_lower.count("u") + \
     nome2_lower.count("e")
 
-total_de_true = nome_1_true + nome_2_true
 
 # Quantidades que as letras L O V E se repetem no nome 1
 nome_1_love += nome1_lower.count("l") + \
@@ -42,9 +41,14 @@ nome_2_love += nome2_lower.count("l") + \
     nome2_lower.count("o") + \
     nome2_lower.count("v") + \
     nome2_lower.count("e")
+
+total_de_true = nome_1_true + nome_2_true
 total_de_love = nome_1_love + nome_2_love
 
-juntar_true_e_love = str(total_de_true  total_de_love)
+# JUNTAR O TOTAL DE total_de_true total_de_love usando o F-STRING do Python e transformando-o em um numero inteiro
+# para eu poder fazer cálculos matemáticos com ele, caso for preciso.
+juntar_true_e_love = int(f"{total_de_true}{total_de_love}")
+
 
 print(f"total de true: {total_de_true}")
 print(f"total de love: {total_de_love}")
