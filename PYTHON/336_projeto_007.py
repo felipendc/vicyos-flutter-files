@@ -44,7 +44,7 @@ if saltar == "S" or saltar == "s":
             print(
                 "\nAo parar, para descansar, você deitou-se na grama e começou olhar para as árvores,")
             print(
-                "e você acabou notando uma casa de árvore que continham 3 portas.")
+                "e você acabou notando uma casa de árvore que continha 3 portas.")
             print(
                 "Você escalou a árvore e você decidiu ver o que tinha atrás das portas...")
             print(
