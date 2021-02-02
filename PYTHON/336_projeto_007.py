@@ -52,7 +52,8 @@ if saltar == "S" or saltar == "s":
             print("Então, você pensou... qual delas abrir primeiro.")
             print("")
             qual_porta_abrir = input(
-                "Qual das portas você deseja abrir primeiro? Digite: 'V' para abrir a porta vermelha, 'A' para abrir a porta azul ou M para abrir a porta amarela: ")
+                "Qual das portas você deseja abrir primeiro? Digite: 'V' para abrir a porta vermelha, 'A' para abrir a "
+                "porta azul ou M para abrir a porta amarela: ")
 
             if qual_porta_abrir == "V" or qual_porta_abrir == "v":
                 print(
