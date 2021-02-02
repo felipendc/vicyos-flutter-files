@@ -5,7 +5,7 @@ import os  # Para eu poder ter acesso aos comandos do CMD  do Windows.
 # A ideia dese código é criar uma roleta-russa com o nome das pessoas inserida pelo usuário.
 # O nome que for sorteado, será a pessoa que pagará a conta do restaurante.
 
-# A idea é combinar o lista com os números aleatórios que eu aprendi no dia anterior!
+# A idea é combinar a lista com os números aleatórios que eu aprendi no dia anterior!
 ##############################################################################################
 
 # Split string method (Metodo para dividir string)
