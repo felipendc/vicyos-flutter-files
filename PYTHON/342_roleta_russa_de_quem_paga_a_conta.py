@@ -1,3 +1,4 @@
+import random
 import random  # Para gerar números aleatórios.
 import os  # Para eu poder ter acesso aos comandos do CMD  do Windows.
 
@@ -48,3 +49,24 @@ print(
 # link que mostra um exemplo:
 # https://www.w3schools.com/python/ref_random_choice.asp
 # Mas, nesse exercício o método choice() não era permitido. hahaha.
+
+
+#############################################
+# Segunda maneira de escrever esse código!  #
+#############################################
+
+
+# # Split string method
+# names_string = input("Give me everybody's names, seperated by a comma. ")
+# names = names_string.split(", ")
+
+# #Write your code below this line 👇
+
+# #Get the total number of items in list.
+# num_items = len(names)
+# #Generate random numbers between 0 and the last index.
+# random_choice = random.randint(0, num_items - 1)
+# #Pick out random person from list of names using the random number.
+# person_who_will_pay = names[random_choice]
+
+# print(person_who_will_pay + " is going to buy the meal today!")
