@@ -1,4 +1,3 @@
-import random
 import random  # Para gerar números aleatórios.
 import os  # Para eu poder ter acesso aos comandos do CMD  do Windows.
 
