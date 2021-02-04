@@ -7,9 +7,7 @@
 
 numero = int(input("Qual é o número que você gostaria de checar? "))
 
-resultado = numero % 2
-
-if resultado == 0:
+if numero % 2 == 0:
     print(f"{numero} é um número par")
 else:
     print(f"{numero} é um número impar")

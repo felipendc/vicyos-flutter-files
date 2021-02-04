@@ -1,8 +1,3 @@
-import os
-from io import StringIO
-from unittest.mock import patch
-import unittest
-import testing_copy
 nota_dos_estudantes = input(
     "Insira uma lista de notas dos estudantes: ").split()
 for n in range(0, len(nota_dos_estudantes)):
