@@ -1,3 +1,8 @@
+import os
+from io import StringIO
+from unittest.mock import patch
+import unittest
+import testing_copy
 nota_dos_estudantes = input(
     "Insira uma lista de notas dos estudantes: ").split()
 for n in range(0, len(nota_dos_estudantes)):
@@ -31,3 +36,24 @@ print(f'A maior nota entre os estudantes da classe é: {maior_nota}')
 # if comparar >= maior_nota: Terá um resultado.
 # if maior_nota >= comparar: Terá um resultado reverso!
 ######################################################################################
+
+
+###################################################
+#### Outra maneira de escrever a mesma lógica #####
+###################################################
+
+# # 🚨 Don't change the code below 👇
+# student_scores = input("Input a list of student scores ").split()
+# for n in range(0, len(student_scores)):
+#   student_scores[n] = int(student_scores[n])
+# print(student_scores)
+# # 🚨 Don't change the code above 👆
+
+# #Write your code below this row 👇
+# highest_score = 0
+# for score in student_scores:
+#   if score > highest_score:
+#     highest_score = score
+#     # print(highest_score)
+
+# print(f"The highest score in the class is: {highest_score}")
