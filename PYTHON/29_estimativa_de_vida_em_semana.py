@@ -1,5 +1,5 @@
 
-idade = input("Qual é a sua idade atual?")
+idade = input("Qual é a sua idade atual? ")
 
 
 dias_do_ano = 365
