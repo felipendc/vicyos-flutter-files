@@ -1,4 +1,3 @@
-import random
 import random  # Gerar um número aleátorio
 import os  # Vou usar para poder executar comandos no CMD do Windows!
 pedra = '''
