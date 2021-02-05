@@ -1,5 +1,6 @@
 # Password Generator Project
 import random
+import os
 # 0
 letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
           'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -52,8 +53,12 @@ for numero in range(0, 4):
 
 juntar_caracteres = lista_de_letras + lista_de_simbolos + lista_de_numeros
 
+aleatorizar_caracteres = lista_de_letras + lista_de_simbolos + lista_de_numeros
+aleatorizar = random.shuffle(aleatorizar_caracteres)
 
-print(*juntar_caracteres)
-print("A sua senha é: "+''.join(juntar_caracteres))
-# print(*lista_de_letras+lista_de_simbolos+lista_de_numeros)
-# print(lista_de_letras+lista_de_simbolos+lista_de_numeros)
+
+os.system('cls') or None
+print("\nNa ordem selecionada:\nA sua senha é: "+''.join(juntar_caracteres))
+aleatorizar = random.shuffle(aleatorizar_caracteres)
+print("\nNa ordem aleatória: \nA sua senha é: " +
+      ''.join(aleatorizar_caracteres) + '\n')
