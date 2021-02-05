@@ -21,7 +21,7 @@ simbolos = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 # opcoes[0][0]
 opcoes = [letras, numeros, simbolos]
 
-# Limpar o CMD para remover as coisas desnessessárias:
+# Limpar o CMD para remover as coisas desnecessárias:
 os.system('cls') or None
 
 print("\nBem vindo ao Gerador de Senha Py!")
