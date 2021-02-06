@@ -35,3 +35,9 @@ while not at_goal():
 # Código:
 # Só é preciso upá-lo:
 #########################
+
+
+# 63. Final Project: Scaping the Maze
+# In my case, It took three freaking hours for me to finally find the code solution for the "Maze World".
+# But, the code that I wrote works all good in all of the Meze World layouts.Including "problem_world1", "problem_world2" and "problem_world3":
+# Here is my code:
