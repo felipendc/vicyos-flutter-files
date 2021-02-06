@@ -44,4 +44,5 @@ while not len(palavra_escolhida) == len(palavra_completada):
 
     os.system('cls') or None  # Pra limpar o CMD do Windows!
     print(f'\nVocê escolheu a letra: {letra_escolhida}')
-    print("\n" + ' '.join(display) + "\n")
+    print("\nA palavra é: " + '"'+' '.join(display)+'"' + "\n")
+    print("Parabéns! Você venceu!")
