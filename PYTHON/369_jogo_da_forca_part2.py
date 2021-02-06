@@ -23,11 +23,15 @@ index_da_letra = 0
 for letra in palavra_escolhida:
 
     if letra_escolhida == letra:
+        # print(index_da_letra)
         display[index_da_letra] = letra
         index_da_letra += 1
+        # print('Acertou')
     else:
+        # print(index_da_letra)
         index_da_letra += 1
         # print('Errou')
+
 
 # Printar as letras corretas em sua posição.
 print(display)
