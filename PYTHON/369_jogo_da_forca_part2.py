@@ -33,5 +33,14 @@ for letra in palavra_escolhida:
         # print('Errou')
 
 
+print(f'\nVocê escolheu a letra: {letra_escolhida}')
+
+# O * ao lado do nome da lista removerá as virgulas e os colchetes.
+# print(*display)
+
+
 # Printar as letras corretas em sua posição.
-print(display)
+# Dentro de '' deve haver um espaço ' ' para poder separar os caracteres.
+# O .join(nome_da_vareável) vai remover as colchetes e as vírgulas da lista ou da vareável.
+
+print("\n" + ' '.join(display) + "\n")
