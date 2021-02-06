@@ -26,7 +26,7 @@ print(f'Pssst, a palavra escolhida foi: {palavra_escolhida}.')
 while not len(palavra_escolhida) == len(palavra_completada):
 
     os.system('cls') or None  # Pra limpar o CMD do Windows!
-    print(display)
+    print(' '.join(display))
     letra_escolhida = input("Escolha uma letra: ").lower()
 
     index_da_letra = 0
@@ -35,10 +35,13 @@ while not len(palavra_escolhida) == len(palavra_completada):
         if letra_escolhida == letra:
             display[index_da_letra] = letra
             index_da_letra += 1
+
+            # Add + 1 até ele conter o mesmo número
+            # de letra que a letra escolhida.
             palavra_completada += letra
-            print(palavra_completada)
         else:
             index_da_letra += 1
 
+    os.system('cls') or None  # Pra limpar o CMD do Windows!
     print(f'\nVocê escolheu a letra: {letra_escolhida}')
     print("\n" + ' '.join(display) + "\n")
