@@ -1,5 +1,5 @@
 
-# Definindo a função!
+# Função definida!
 def cal_latas_de_tintas(altura, largura, cobertura):
 
     numeros_de_latas = (altura * largura) / cobertura
@@ -10,6 +10,8 @@ def cal_latas_de_tintas(altura, largura, cobertura):
 # Input do usuário:
 parede_altura = int(input("altura da parede: "))
 parede_largura = int(input("Largura da parede: "))
+
+# Cada lata de tinta cobre 5 metros quadrados.
 cobre_ate = 5
 
 # Chamando a função!
