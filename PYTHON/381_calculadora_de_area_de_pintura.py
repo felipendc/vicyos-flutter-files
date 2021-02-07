@@ -1,9 +1,14 @@
-
+import math
 # Função definida!
+
+
 def cal_latas_de_tintas(altura, largura, cobertura):
 
     numeros_de_latas = (altura * largura) / cobertura
-    arredondar_resultado = round(numeros_de_latas)
+
+    # É muito importante usar o math.ceil, pois ele vai arredondar os resultados com
+    # números decimais.
+    arredondar_resultado = math.ceil(numeros_de_latas)
     print(f'Você vai precisar comprar {arredondar_resultado} latas de tinta.')
 
 
