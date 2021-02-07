@@ -8,7 +8,7 @@ def cal_latas_de_tintas(altura, largura, cobertura):
 
 
 # Input do usuário:
-parede_altura = int(input("altura da parede: "))
+parede_altura = int(input("Altura da parede: "))
 parede_largura = int(input("Largura da parede: "))
 
 # Cada lata de tinta cobre 5 metros quadrados.
