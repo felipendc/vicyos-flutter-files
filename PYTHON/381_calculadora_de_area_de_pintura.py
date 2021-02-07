@@ -8,6 +8,8 @@ def cal_latas_de_tintas(altura, largura, cobertura):
 
     # É muito importante usar o math.ceil, pois ele vai arredondar os resultados com
     # números decimais.
+    # Se o resultador for: 10.0, então ele também será 10.
+    # E se o resultado for: 10.2 o math.ceil já vai arredontar para "11".
     arredondar_resultado = math.ceil(numeros_de_latas)
     print(f'Você vai precisar comprar {arredondar_resultado} latas de tinta.')
 
