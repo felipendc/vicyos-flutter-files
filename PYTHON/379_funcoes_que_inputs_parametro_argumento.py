@@ -1,4 +1,4 @@
-##############FUNÇÃO SIMOPLES ################
+# FUNÇÃO SIMOPLES
 def cumprimentar():
     print('Olá.')
     print('Eai, beleza?')
@@ -8,12 +8,12 @@ def cumprimentar():
 cumprimentar()
 
 
-###########FUNÇÃO QUEP COM PARÂMETRO E QUE RECEBE UM ARGUMENTO ##########
+# FUNÇÃO COM PARÂMETRO E QUE RECEBE UM ARGUMENTO.
 # O argumento é o que passa pelo parâmetro.
 def cumprimentar_com_nome(nome):
-    print('Olá, {nome}.')
-    print('Eai, {nome}, beleza?')
-    print('Oi, {nome}, como você está?')
+    print(f'Olá, {nome}.')
+    print(f'Eai, {nome}, beleza?')
+    print(f'Oi, {nome}, como você está?')
 
 
 cumprimentar_com_nome('Felipe')
