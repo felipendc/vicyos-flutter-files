@@ -4,7 +4,7 @@ def cal_latas_de_tintas(altura, largura, cobertura):
 
     numeros_de_latas = (altura * largura) / cobertura
     arredondar_resultado = round(numeros_de_latas)
-    print(arredondar_resultado)
+    print(f'Você vai precisar comprar {arredondar_resultado} latas de tinta.')
 
 
 # Input do usuário:
