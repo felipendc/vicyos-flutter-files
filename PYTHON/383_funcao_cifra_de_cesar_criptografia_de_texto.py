@@ -21,8 +21,6 @@ deslocamento = int(input('Digite o número de deslocamento: '))
 
 
 # FUNÇÃO QUE VAI CRIPTOGRAFAR OU DECRIPTOGRAFAR UM TEXTO INSERIDO PELO USUÁRIO:
-
-
 def criptografar(direcao, texto_do_usuario, alfabeto, deslocamento):
 
     # Se o "deslocamento" for qual a 0 ou maior que o tamanho do alfabeto...
