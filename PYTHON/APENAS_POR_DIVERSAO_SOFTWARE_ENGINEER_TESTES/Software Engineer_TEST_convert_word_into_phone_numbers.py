@@ -4,6 +4,10 @@ import os
 # Google Coding Interview With A Facebook Software Engineer.
 # LINK: https://www.youtube.com/watch?v=PIeiiceWe_w&t=723s&ab_channel=Cl%C3%A9mentMihailescu
 
+# AVISO: EU SEI QUE NÃO ESTÁ PERFEITO. MAS, FOI APENAS PRA EU ME DIVERTIR UM POUCO.
+# POIS, QUANDO EU ESTAVA ASSISTINDO O VÍDEO DO LINK ACIMA, EU ME EMPOUGUEI EU SENTI QUE
+# EU TALVEZ CONSEGURIA FAZER O QUE O FOI PEDIDO NO VÍDEO. HAHAHAH.
+
 um = []
 dois = ['a', 'b', 'c', ]
 tres = ['d', 'e', 'f']
