@@ -26,6 +26,18 @@ teclado = [um, dois, tres, quatro, cinco, seis, sete, oito, nove]
 
 palavra_escolhida = 'flowers'
 
+# Teste apena um de cada vez:
+
+# palavra_escolhida = 'foo'
+# palavra_escolhida = 'bar'
+# palavra_escolhida = 'baz'
+# palavra_escolhida = 'foobar'
+# palavra_escolhida = 'emo'
+# palavra_escolhida = 'cap'
+# palavra_escolhida = 'car'
+# palavra_escolhida = 'cat'
+
+
 converter_para_numero_teclado = []
 add = []
 
@@ -44,7 +56,7 @@ for letra in palavra_escolhida:
         indice_0 += 1
         if letra == letra_do_Teclado:
             add.append(indice_0)
-            converter_para_numero_teclado.append(1)
+            converter_para_numero_teclado.append(2)
             # print(indice_0)
             # print(letra)
 
@@ -52,7 +64,7 @@ for letra in palavra_escolhida:
         indice_1 += 1
         if letra == letra_do_Teclado:
             add.append(indice_1)
-            converter_para_numero_teclado.append(1)
+            converter_para_numero_teclado.append(2)
             # print(indice_1)
             # print(letra)
 
