@@ -1,14 +1,16 @@
 from art import logo
 import brain
+from brain import horario
 import os
 
 
 os.system('cls') or None  # Limpar CMD
 print(logo)
 
+
 # Codificar ou decodificar?
 direcao = input(
-    'Digite "codificar" para criptografar ou digite "decodificar" para descriptografar:\n')
+    f'Olá, {horario}, digite "codificar" para criptografar ou digite "decodificar" para descriptografar:\n')
 
 # Escolha do usuário:
 texto_do_usuario = ''

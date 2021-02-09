@@ -1,4 +1,19 @@
+from datetime import datetime
 import os
+
+horas = int(datetime.now().strftime('%H'))
+horario = ''
+fim_horario = ''
+
+if horas < 12:
+    horario += 'bom dia'
+    fim_horario += 'Tenha um ótimo dia.\n'
+elif horas < 18:
+    horario += 'boa tarde'
+    fim_horario += 'Tenha uma ótima tarde.\n'
+elif horas < 24:
+    horario += 'boa noite'
+    fim_horario += 'Tenha uma ótima noite.\n'
 
 # FUNÇÃO QUE VAI CRIPTOGRAFAR OU DECRIPTOGRAFAR UM TEXTO INSERIDO PELO USUÁRIO:
 
@@ -48,8 +63,11 @@ def criptografar(direcao, texto_do_usuario, deslocamento):
             os.system('cls') or None  # Limpar CMD
             print("\nO seu texto codificado é: " +
                   ''.join(converter_para_letra) + "\n")
-            # print(alfabeto)
+            print(fim_horario)
+
         elif direcao == "decodificar":
             os.system('cls') or None  # Limpar CMD
             print("\nO seu texto decodificado é: " +
                   ''.join(converter_para_letra) + "\n")
+
+            print(fim_horario)

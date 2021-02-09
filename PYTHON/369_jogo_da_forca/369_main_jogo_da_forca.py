@@ -30,7 +30,7 @@ ja_foi_escolhido = ''
 nao_existe_em_palavra_escolhida = ''
 
 # APENAS PARA TESTAR O CÓDIGO:
-print(f'Pssst, a palavra escolhida foi: {palavra_escolhida}.')
+# print(f'Pssst, a palavra escolhida foi: {palavra_escolhida}.')
 
 ###################  WHILE LOOP ##################
 while not fim_do_jogo:
@@ -77,6 +77,7 @@ while not fim_do_jogo:
         os.system('cls') or None  # Pra limpar o CMD do Windows!
         print(arte.estagios_desenho[vidas])
         print('Ah, que peninha... parece que você perdeu! Hahaha.\n')
+        print(f'A palavra escolhida foi: {palavra_escolhida}.\n')
 
 
 ##########################################################
