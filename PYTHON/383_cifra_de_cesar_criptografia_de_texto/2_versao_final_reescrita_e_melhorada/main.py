@@ -32,5 +32,6 @@ while not finalizar:
         'Para reiniciar digite: "r" ou digite: "f" para finalizar.\n').lower()
     if reiniciar == "f":
         finalizar = True
+        os.system('cls') or None
         print(art.logo, '\n')
         print(f'Programa finalizado. {fim_horario}')
