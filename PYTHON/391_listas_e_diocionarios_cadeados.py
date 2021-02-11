@@ -1,25 +1,26 @@
-# Python Dictionaries
+# Dicionátios em Python
 
-programming_dictionary = {
-    "Bug": "An error in a program that prevents the program from running as expected.",
-    "Function": "A piece of code that you can easily call over and over again.",
+programando_um_dicionário = {
+    "Bug": "Um erro em um programa que impede que o programa funcione como esperado.",
+
+    "Function": "Um pedaço de código que você pode chamá-lo ou 'reusá-lo' varias vezes.",
 }
 
 # Retrieving items from dictionary.
 # print(programming_dictionary["Function"])
 
 # Adding new items to dictionary.
-programming_dictionary["Loop"] = "The action of doing something over and over again."
+programando_um_dicionário["Loop"] = "O ato de fazer algo várias vezes."
 
 # Create an empty dictionary.
-empty_dictionary = {}
+dicionario_vazio = {}
 
 # Wipe an existing dictionary
 # programming_dictionary = {}
 # print(programming_dictionary)
 
 # Edit an item in a dictionary
-programming_dictionary["Bug"] = "A moth in your computer."
+programando_um_dicionário["Bug"] = "Uma inseto no computador."
 # print(programming_dictionary)
 
 # Loop through a dictionary
@@ -30,28 +31,28 @@ programming_dictionary["Bug"] = "A moth in your computer."
 #######################################
 
 # Nesting
-capitals = {
+capitais = {
     "France": "Paris",
     "Germany": "Berlin",
 }
 
 # Nesting a List in a Dictionary
 
-travel_log = {
+log_de_viagens = {
     "France": ["Paris", "Lille", "Dijon"],
     "Germany": ["Berlin", "Hamburg", "Stuttgart"],
 }
 
 # Nesting Dictionary in a Dictionary
 
-travel_log = {
+log_de_viagens = {
     "France": {"cities_visited": ["Paris", "Lille", "Dijon"], "total_visits": 12},
     "Germany": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5},
 }
 
 # Nesting Dictionaries in Lists
 
-travel_log = [
+log_de_viagens = [
     {
         "country": "France",
         "cities_visited": ["Paris", "Lille", "Dijon"],
