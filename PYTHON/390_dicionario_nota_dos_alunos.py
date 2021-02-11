@@ -27,7 +27,6 @@ for chave in pontuacao_dos_alunos:
 print(nota_dos_alunos)
 
 # O resultado será:
-
 # nota_dos_alunos = {
 # 'Harry': 'Exceeds Expectations',
 # 'Ron': 'Acceptable',
