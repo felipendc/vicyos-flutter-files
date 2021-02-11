@@ -6,7 +6,6 @@ pontuacao_dos_alunos = {
     "Neville": 62,
 }
 
-
 nota_dos_alunos = {}
 
 for chave in pontuacao_dos_alunos:
@@ -24,6 +23,5 @@ for chave in pontuacao_dos_alunos:
 
     elif pontuacao_dos_alunos[chave] <= 100:
         nota_dos_alunos[chave] = 'Excepcional'
-
 
 print(nota_dos_alunos)
