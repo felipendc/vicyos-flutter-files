@@ -25,3 +25,13 @@ for chave in pontuacao_dos_alunos:
         nota_dos_alunos[chave] = 'Excepcional'
 
 print(nota_dos_alunos)
+
+# O resultado será:
+
+# nota_dos_alunos = {
+# 'Harry': 'Exceeds Expectations',
+# 'Ron': 'Acceptable',
+# 'Hermione': 'Outstanding',
+# 'Draco': 'Acceptable',
+# 'Neville': 'Fail'
+# }
