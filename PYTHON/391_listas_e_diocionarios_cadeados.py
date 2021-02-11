@@ -3,30 +3,30 @@
 programando_um_dicionário = {
     "Bug": "Um erro em um programa que impede que o programa funcione como esperado.",
 
-    "Function": "Um pedaço de código que você pode chamá-lo ou 'reusá-lo' varias vezes.",
+    "Funcao": "Um pedaço de código que você pode chamá-lo ou 'reusá-lo' varias vezes.",
 }
 
-# Retrieving items from dictionary.
-# print(programming_dictionary["Function"])
+# buscando 'pegando' itens dentro de um dictionário.
+# print(programando_um_dicionário["Funcao"])
 
-# Adding new items to dictionary.
+# Adicionar novos itens a um dicionário.
 programando_um_dicionário["Loop"] = "O ato de fazer algo várias vezes."
 
-# Create an empty dictionary.
+# Criar um dicionário vazio.
 dicionario_vazio = {}
 
-# Wipe an existing dictionary
-# programming_dictionary = {}
-# print(programming_dictionary)
+# Limpar ou esvaziar um cionário
+# programando_um_dicionário = {}
+# print(programando_um_dicionário)
 
-# Edit an item in a dictionary
+# Editar um item dentro de um dicionário
 programando_um_dicionário["Bug"] = "Uma inseto no computador."
-# print(programming_dictionary)
+# print(programando_um_dicionário)
 
-# Loop through a dictionary
-# for key in programming_dictionary:
+# Iterar (loop) dentro de um dicionário
+# printar a chave dentro de programando_um_dicionário:
 #   print(key)
-#   print(programming_dictionary[key])
+#   print(programando_um_dicionário[key])
 
 #######################################
 
@@ -36,31 +36,31 @@ capitais = {
     "Germany": "Berlin",
 }
 
-# Nesting a List in a Dictionary
+# Alinhando uma lista dentro de um dicionário
 
 log_de_viagens = {
     "France": ["Paris", "Lille", "Dijon"],
     "Germany": ["Berlin", "Hamburg", "Stuttgart"],
 }
 
-# Nesting Dictionary in a Dictionary
+# Alinhando dicionários dentro de dicionários
 
 log_de_viagens = {
-    "France": {"cities_visited": ["Paris", "Lille", "Dijon"], "total_visits": 12},
-    "Germany": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5},
+    "France": {"cidades_visitadas": ["Paris", "Lille", "Dijon"], "total_de_visitas": 12},
+    "Germany": {"cidades_visitadas": ["Berlin", "Hamburg", "Stuttgart"], "total_de_visitas": 5},
 }
 
-# Nesting Dictionaries in Lists
+# Alinhando dicionários dentro de listas
 
 log_de_viagens = [
     {
         "country": "France",
-        "cities_visited": ["Paris", "Lille", "Dijon"],
-        "total_visits": 12,
+        "cidades_visitadas": ["Paris", "Lille", "Dijon"],
+        "total_de_visitas": 12,
     },
     {
         "country": "Germany",
-        "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
-        "total_visits": 5,
+        "cidades_visitadas": ["Berlin", "Hamburg", "Stuttgart"],
+        "total_de_visitas": 5,
     },
 ]
