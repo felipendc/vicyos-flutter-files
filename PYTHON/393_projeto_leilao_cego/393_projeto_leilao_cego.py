@@ -2,7 +2,7 @@ import os  # Pra limpar a tela do CMD
 import art
 
 ofertadores = []
-maior_lance = []
+maior_lance = ''
 
 
 def add_novo_ofertador(nome_do_ofertador, lance_do_ofertador):
@@ -14,7 +14,9 @@ def add_novo_ofertador(nome_do_ofertador, lance_do_ofertador):
     )
 
 
-# def ganhador():
+def ganhador():
+    for apostador in ofertadores:
+        pass
 
 
 # Part 1
@@ -31,9 +33,9 @@ while not sem_mais_ofertadores:
     add_novo_ofertador(nome_do_ofertador=add_nome,
                        lance_do_ofertador=add_lance)
 
-    novo_apostador = add_nome = input(
+    mais_ofertadores = input(
         "Alguém mais deseja ofertar? Digite 'sim' ou 'não'. ").lower()
-    if novo_apostador == 'não' or novo_apostador == 'nao':
+    if mais_ofertadores == 'não' or mais_ofertadores == 'nao':
         sem_mais_ofertadores = True
 
 print(ofertadores)
