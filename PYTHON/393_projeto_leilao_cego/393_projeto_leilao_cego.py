@@ -1,5 +1,6 @@
 import os  # Pra limpar a tela do CMD
 import art
+from parte_do_dia import horario, fim_horario
 
 ofertadores = {}
 
@@ -30,10 +31,10 @@ def ganhador_com_maior_lance():
 
     if genero == 'f':
         print(
-            f'A vencedor é a: {nome_do_ofertador} com um lance de R$ {maior_lance}')
+            f'A vencedora é a: {nome_do_ofertador}, com um lance de: R$ {maior_lance}\n{fim_horario }')
     else:
         print(
-            f'O vencedor é o: {nome_do_ofertador} com um lance de R$ {maior_lance}')
+            f'O vencedor é o: {nome_do_ofertador}, com um lance de: R$ {maior_lance}\n{fim_horario }')
 
 
 sem_mais_ofertadores = False
@@ -41,7 +42,7 @@ while not sem_mais_ofertadores:
 
     os.system('cls') or None
     print(art.logo)
-    print('Bem-vindo ao Leilão Cego!')
+    print(f'Olá, {horario}, bem-vindo ao Leilão Cego!')
 
     add_nome = input('Qual é o seu nome? ').lower()
 
@@ -64,5 +65,4 @@ while not sem_mais_ofertadores:
     if mais_ofertadores == 'não' or mais_ofertadores == 'nao':
         sem_mais_ofertadores = True
 
-        print(ofertadores)
         ganhador_com_maior_lance()
