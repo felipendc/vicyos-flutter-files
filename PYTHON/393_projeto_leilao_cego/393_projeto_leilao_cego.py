@@ -1,22 +1,15 @@
 import os  # Pra limpar a tela do CMD
 import art
 
-ofertadores = []
+ofertadores = {}
 maior_lance = ''
 
 
 def add_novo_ofertador(nome_do_ofertador, lance_do_ofertador):
-    ofertadores.append(
-        {
-            "ofertador": nome_do_ofertador,
-            "lance": int(lance_do_ofertador),
-        }
-    )
+    ofertadores[nome_do_ofertador] = lance_do_ofertador
 
 
-def ganhador():
-    for apostador in ofertadores:
-        pass
+# def ganhador_com_maior_lance(maior_lance):
 
 
 # Part 1
