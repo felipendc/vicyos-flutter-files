@@ -16,7 +16,7 @@ print(formatar_nome(input("Qual é o seu primeiro nome? "),
                     input("Qual é o seu último nome? ")))
 
 # Funções com saída já usadas
-length = len(nome_formatado)
+tamanho = len(nome_formatado)
 
 # Retorna como um valor de saída
 
