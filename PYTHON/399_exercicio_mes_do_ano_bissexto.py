@@ -13,6 +13,8 @@ def ano_bissexto(ano):
 
 def dias_no_mes(ano, mes):
     dias_do_mes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if mes > 12 or mes < 1:
+        return "Você deve escolher entre o mês 1 até o mês 12."
     mes_selecionado = mes - 1
     ano_bissexto_resultado = ano_bissexto(ano)
     if ano_bissexto_resultado:
