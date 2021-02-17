@@ -1,0 +1,28 @@
+Os arquivos salvos na extensão .pyw podem ser executados diretamente, basta clicar duas vezes neles,
+a letra w significa que o interpretador deve esconder o console, eu costumo fazer isso com programas
+com interface gráfica (afinal se tem interface gráfica não precisa aparecer o console) e também
+com programas que desejo que rodem de maneira silenciosa.
+
+Os arquivos salvos na extensão.py você pode abrir diretamente no interpretador do Python ou com uma
+IDE tipo o PyCharm ou o Visual Code.
+
+Preste atenção que alguns scripts fazem utilização de bilbiotecas que devem ser instaladas antes de
+rodar o script, sugiro que você instale o Pip Install, para isso, abra o CMD e digite o seguinte comando:
+
+pip install pip
+
+Feito isso você deverá ver que bibliotecas cada código usa e instalá-lo apropriadamente, geralmente a
+instalação é algo do tipo:
+
+pip install <E O NOME DA BIBLIOTECA>
+
+Exemplos:
+pip install pytube
+pip install instaloader
+pip install termcolor
+pip install colored
+
+PS: O único script que é obrigatório ser executado na IDE (PyCharm ou Visual Code) é o "Cores com termcolor"
+porque a visualização das cores só funciona nas IDEs.
+
+Faça bom uso!
