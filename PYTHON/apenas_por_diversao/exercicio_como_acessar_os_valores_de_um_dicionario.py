@@ -39,6 +39,6 @@ print(teste["supported_versions"][1]["xda_thread"])
 print(teste["supported_versions"][1]["deprecated"])
 
 # Printar o valor da cada chave do dicionário que está dentro de uma lista na posisão 2:
-print(teste["supported_versions"][1]["version_code"])
-print(teste["supported_versions"][1]["xda_thread"])
-print(teste["supported_versions"][1]["deprecated"])
+print(teste["supported_versions"][2]["version_code"])
+print(teste["supported_versions"][2]["xda_thread"])
+print(teste["supported_versions"][2]["deprecated"])
