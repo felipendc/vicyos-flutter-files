@@ -5,17 +5,18 @@ import os
 
 def dar_cartas():
     lista_de_cartas = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-    return random.choice(lista_de_cartas)
+    carta_aleatoria = int(random.choice(lista_de_cartas))
+    return carta_aleatoria
 
 
 def vinte_e_um():
-    cartas_do_jogador_atual = []
-    cartas_do_computador_atual = []
+    cartas_atuais_do_computador = []
+    cartas_atuais_do_jogador = []
 
     # Pontuação e Flag para parar o While loop
     pontuacao_do_computador = 0
     pontuacao_do_jogador = 0
-    continuar_jogando = False
+    continuar_jogando = True
 
     ######## INICIO DO JOGO ############
     os.system('cls') or None
@@ -25,74 +26,89 @@ def vinte_e_um():
 
     if gostaria_de_jogar == 's':
         # Primeira carta para o jogador
-        cartas_do_jogador_atual.append(dar_cartas())
-        soma_das_cartas_do_jogador = sum(cartas_do_jogador_atual)
-        pontuacao_do_jogador = soma_das_cartas_do_jogador
+        cartas_atuais_do_jogador.append(dar_cartas())
+        pontuacao_do_jogador = sum(cartas_atuais_do_jogador)
 
         # Segunda carta para o jogador
-        cartas_do_jogador_atual.append(dar_cartas())
-        soma_das_cartas_do_jogador = sum(cartas_do_jogador_atual)
-        pontuacao_do_jogador = soma_das_cartas_do_jogador
+        cartas_atuais_do_jogador.append(dar_cartas())
+        pontuacao_do_jogador = sum(cartas_atuais_do_jogador)
 
         # Primeira carta para o computador
-        cartas_do_computador_atual.append(dar_cartas())
-        soma_das_cartas_do_computador = sum(cartas_do_computador_atual)
-        pontuacao_do_computador = soma_das_cartas_do_computador
+        cartas_atuais_do_computador.append(dar_cartas())
+        pontuacao_do_computador = sum(cartas_atuais_do_computador)
 
         # Segunda carta para o computador
-        cartas_do_computador_atual.append(dar_cartas())
-        soma_das_cartas_do_computador = sum(cartas_do_computador_atual)
-        pontuacao_do_computador = soma_das_cartas_do_computador
+        cartas_atuais_do_computador.append(dar_cartas())
+        pontuacao_do_computador = sum(cartas_atuais_do_computador)
 
         os.system('cls') or None
         print(art.logo)
         print(
-            f'Suas cartas: {cartas_do_jogador_atual}, pontuação atual: {pontuacao_do_jogador}')
-        print(f'Primeira carta do computador: {cartas_do_computador_atual[0]}')
+            f'Suas cartas: {cartas_atuais_do_jogador}, pontuação atual: {pontuacao_do_jogador}')
+        print(
+            f'Primeira carta do computador: {cartas_atuais_do_computador[0]}')
 
-        while pontuacao_do_computador <= 21 and pontuacao_do_jogador <= 21 and continuar_jogando:
+        while continuar_jogando == True:
+
+            if pontuacao_do_computador > 21 or pontuacao_do_jogador > 21:
+                continuar_jogando = False
+
             comprar_ou_passar = input(
                 "Digite 's' para pegar mais uma carta ou digite 'n' para passar a vez: ").lower()
 
             if comprar_ou_passar == 's':
                 # Comprar carta
-                cartas_do_jogador_atual.append(dar_cartas())
+                cartas_atuais_do_jogador.append(dar_cartas())
                 # Pontuação
-                soma_das_cartas_do_jogador = sum(cartas_do_jogador_atual)
-                pontuacao_do_jogador = soma_das_cartas_do_jogador
+                pontuacao_do_jogador = sum(cartas_atuais_do_jogador)
 
                 print(
-                    f'Suas cartas: {cartas_do_jogador_atual}, pontuação atual: {pontuacao_do_jogador}')
+                    f'Suas cartas: {cartas_atuais_do_jogador}, pontuação atual: {pontuacao_do_jogador}')
                 print(pontuacao_do_jogador)
 
                 # Comprar carta para o computador
-                cartas_do_computador_atual.append(dar_cartas())
+                cartas_atuais_do_computador.append(dar_cartas())
                 # Pontuação do computador
-                soma_das_cartas_do_computador = sum(cartas_do_computador_atual)
-                pontuacao_do_computador = soma_das_cartas_do_computador
-                print(
-                    f'Primeira carta do computador: {cartas_do_computador_atual[0]}')
-                print(pontuacao_do_computador)
-                print(cartas_do_computador_atual)
+                pontuacao_do_computador = sum(cartas_atuais_do_computador)
 
+                os.system('cls') or None
+                print(f'Cartas do jogador {cartas_atuais_do_jogador}')
+
+                # print(
+                #     f'Primeira carta do computador: {cartas_atuais_do_jogador[0]}')
+                print(f'Cartas do computador {cartas_atuais_do_computador}')
+
+                if pontuacao_do_computador > 21 or pontuacao_do_jogador > 21:
+                    continuar_jogando = False
             else:
-
-                continuar_jogando = True
+                continuar_jogando = False
                 print(continuar_jogando)
 
-            # Fim do jogo:
+    # Fim de jogo
+    print('')
+    print(
+        f'Sua mão final: {cartas_atuais_do_jogador}, pontuação final: {pontuacao_do_jogador}')
 
-            # Pontuação do jogador
-        pontuacao_do_jogador = sum(cartas_do_jogador_atual)
-        print(
-            f'Sua mão final: {cartas_do_jogador_atual}, pontuação final: {pontuacao_do_jogador}')
+    print(
+        f'Mão final do computador: {cartas_atuais_do_computador}, pontuação final: {pontuacao_do_computador}')
 
-        # Pontuação do computador
-        pontuacao_do_computador = sum(cartas_do_computador_atual)
-        print(
-            f'Mão final do computador: {cartas_do_computador_atual}, pontuação final: {pontuacao_do_computador}')
-        print(f'VENCEU OU PERDEU')
-        print(f'')
+    if pontuacao_do_jogador == 21:
+        print('\nVocê acertou 21 pontos!!!!')
+
+    elif pontuacao_do_computador == 21:
+        print('\nO computador acertou 21 pontos!!!!')
+
+    elif pontuacao_do_computador <= 21 and pontuacao_do_jogador <= 21:
+        print('\nHouve um impate')
+
+    elif pontuacao_do_jogador > 21 and pontuacao_do_computador <= 21:
+        print('\nO computador venceu! Hahaha. Pois, você ultrapassou o limite de 21.')
+
+    elif pontuacao_do_computador > 21 and pontuacao_do_jogador <= 21:
+        print('\nVocê ganhou! Hahaha. Pois, computador ultrapassou o limite de 21. ')
+
+    elif pontuacao_do_computador > 21 and pontuacao_do_jogador > 21:
+        print('\nVocê e o computador perderam! Hahaha. Pois, ambos ultrapassaram o limite de 21. ')
 
 
 vinte_e_um()
