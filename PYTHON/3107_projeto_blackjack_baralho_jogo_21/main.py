@@ -50,6 +50,11 @@ def vinte_e_um():
 
         while continuar_jogando == True:
 
+            if 11 in cartas_atuais_do_jogador and pontuacao_do_jogador > 21:
+                cartas_atuais_do_jogador.remove(11)
+                cartas_atuais_do_jogador.append(1)
+                pontuacao_do_jogador = sum(cartas_atuais_do_jogador)
+
             if pontuacao_do_computador > 21 or pontuacao_do_jogador > 21:
                 continuar_jogando = False
 
@@ -66,11 +71,6 @@ def vinte_e_um():
                     f'Suas cartas: {cartas_atuais_do_jogador}, pontuação atual: {pontuacao_do_jogador}')
                 print(pontuacao_do_jogador)
 
-                # Comprar carta para o computador
-                cartas_atuais_do_computador.append(dar_cartas())
-                # Pontuação do computador
-                pontuacao_do_computador = sum(cartas_atuais_do_computador)
-
                 os.system('cls') or None
                 print(f'Cartas do jogador {cartas_atuais_do_jogador}')
 
@@ -78,11 +78,28 @@ def vinte_e_um():
                 #     f'Primeira carta do computador: {cartas_atuais_do_jogador[0]}')
                 print(f'Cartas do computador {cartas_atuais_do_computador}')
 
+            if 11 in cartas_atuais_do_jogador and pontuacao_do_jogador > 21:
+                cartas_atuais_do_jogador.remove(11)
+                cartas_atuais_do_jogador.append(1)
+                pontuacao_do_jogador = sum(cartas_atuais_do_jogador)
+
                 if pontuacao_do_computador > 21 or pontuacao_do_jogador > 21:
                     continuar_jogando = False
             else:
                 continuar_jogando = False
                 print(continuar_jogando)
+
+            # Vez do computador jogar:
+        while pontuacao_do_computador < 17:
+            pontuacao_do_computador = sum(cartas_atuais_do_computador)
+            if 11 in cartas_atuais_do_computador and pontuacao_do_computador > 21:
+                cartas_atuais_do_computador.remove(11)
+                cartas_atuais_do_computador.append(1)
+
+            # Comprar carta para o computador
+            cartas_atuais_do_computador.append(dar_cartas())
+            # Pontuação do computador
+            pontuacao_do_computador = sum(cartas_atuais_do_computador)
 
     # Fim de jogo
     print('')
@@ -98,7 +115,7 @@ def vinte_e_um():
     elif pontuacao_do_computador == 21:
         print('\nO computador acertou 21 pontos!!!!')
 
-    elif pontuacao_do_computador <= 21 and pontuacao_do_jogador <= 21:
+    elif pontuacao_do_computador == pontuacao_do_jogador:
         print('\nHouve um impate')
 
     elif pontuacao_do_jogador > 21 and pontuacao_do_computador <= 21:
@@ -109,6 +126,13 @@ def vinte_e_um():
 
     elif pontuacao_do_computador > 21 and pontuacao_do_jogador > 21:
         print('\nVocê e o computador perderam! Hahaha. Pois, ambos ultrapassaram o limite de 21. ')
+
+    elif pontuacao_do_computador > pontuacao_do_jogador and pontuacao_do_computador <= 21:
+        print(
+            '\nO computador venceu! Hahaha. A pontuação do computador é maior que a sua. ')
+
+    elif pontuacao_do_jogador > pontuacao_do_computador and pontuacao_do_jogador <= 21:
+        print('\nVocê venceu! Hahaha A sua pontuação é maior que a docomputador. ')
 
 
 vinte_e_um()
