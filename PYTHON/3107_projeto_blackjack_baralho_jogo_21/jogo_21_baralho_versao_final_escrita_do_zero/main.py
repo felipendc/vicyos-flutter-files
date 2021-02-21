@@ -18,7 +18,7 @@ def jogo_vinte_e_um():
     minha_pontuacao = 0
     continuar_jogando = True
 
-    ######## INICIO DO JOGO ############
+    ######## INÍCIO DO JOGO ############
     os.system('cls') or None
     gostaria_de_jogar = input(
         f"{art.logo}\nVocê gostaria de jogar Vinte-e-um? Digite 's' para jogar ou 'n' não jogar: ").lower()
