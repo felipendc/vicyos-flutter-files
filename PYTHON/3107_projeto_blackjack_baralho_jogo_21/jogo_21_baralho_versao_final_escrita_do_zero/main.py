@@ -28,8 +28,10 @@ def jogo_vinte_e_um():
         for jogares in range(2):
             minhas_cartas_atuais.append(comprar_carta())
             cartas_atuais_do_adversario.append(comprar_carta())
-            minha_pontuacao = sum(minhas_cartas_atuais)
-            pontuacao_do_adversario = sum(cartas_atuais_do_adversario)
+
+        # Reatualizar a pontuação do jogador e do adversário
+        minha_pontuacao = sum(minhas_cartas_atuais)
+        pontuacao_do_adversario = sum(cartas_atuais_do_adversario)
 
         os.system('cls') or None
         print(
