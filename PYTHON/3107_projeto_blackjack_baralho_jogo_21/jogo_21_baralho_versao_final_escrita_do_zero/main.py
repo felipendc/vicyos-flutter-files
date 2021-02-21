@@ -3,7 +3,7 @@ import art
 import os
 
 
-def comprar_cartas():
+def comprar_carta():
     lista_de_cartas = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
     carta_aleatoria = int(random.choice(lista_de_cartas))
     return carta_aleatoria
@@ -26,8 +26,8 @@ def vinte_e_um():
     if gostaria_de_jogar == 's':
         # Dar duas cartas para cada jogador
         for jogares in range(2):
-            minhas_cartas_atuais.append(comprar_cartas())
-            cartas_atuais_do_adversario.append(comprar_cartas())
+            minhas_cartas_atuais.append(comprar_carta())
+            cartas_atuais_do_adversario.append(comprar_carta())
             minha_pontuacao = sum(minhas_cartas_atuais)
             pontuacao_do_adversario = sum(cartas_atuais_do_adversario)
 
@@ -43,7 +43,7 @@ def vinte_e_um():
 
             if comprar_ou_passar == 's':
                 # Comprar carta
-                minhas_cartas_atuais.append(comprar_cartas())
+                minhas_cartas_atuais.append(comprar_carta())
 
                 # Reatualizar a pontuação do jogador
                 minha_pontuacao = sum(minhas_cartas_atuais)
@@ -78,7 +78,7 @@ def vinte_e_um():
                 cartas_atuais_do_adversario.append(1)
 
             # Comprar carta para o adversário
-            cartas_atuais_do_adversario.append(comprar_cartas())
+            cartas_atuais_do_adversario.append(comprar_carta())
 
         # Reatualizar a pontuação do adversário e finalizar
         pontuacao_do_adversario = sum(cartas_atuais_do_adversario)
