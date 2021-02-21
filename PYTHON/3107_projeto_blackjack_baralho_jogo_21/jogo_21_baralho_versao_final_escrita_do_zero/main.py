@@ -9,7 +9,7 @@ def comprar_carta():
     return carta_aleatoria
 
 
-def vinte_e_um():
+def jogo_vinte_e_um():
     cartas_atuais_do_adversario = []
     minhas_cartas_atuais = []
 
@@ -119,7 +119,7 @@ def vinte_e_um():
     jogar_novamente = input(
         "Você gostaria de jogar novamente? Digite 's' para jogar ou 'n' não jogar: ").lower()
     if jogar_novamente == 's':
-        vinte_e_um()
+        jogo_vinte_e_um()
 
 
-vinte_e_um()
+jogo_vinte_e_um()
