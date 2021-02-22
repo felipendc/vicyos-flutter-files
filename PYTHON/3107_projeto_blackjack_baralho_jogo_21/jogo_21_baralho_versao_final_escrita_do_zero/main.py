@@ -70,9 +70,10 @@ def jogo_vinte_e_um():
             elif comprar_ou_passar != 's':
                 continuar_jogando = False
 
-            # Vez do adversário jogar:
+        # Vez do adversário jogar:
+        # Atualizar a pontuação do adversário
+        pontuacao_do_adversario = sum(cartas_atuais_do_adversario)
         while pontuacao_do_adversario < 17:
-
             # Reatualizar a pontuação do adversário
             pontuacao_do_adversario = sum(cartas_atuais_do_adversario)
             if 11 in cartas_atuais_do_adversario and pontuacao_do_adversario > 21:
