@@ -1,0 +1,24 @@
+AES128 é um algoritmo de criptografia com chave simétrica (mesma chave
+para encriptar e decriptar) que possui o tamanho de 16 ytes (128 bits).
+
+Antes de utilizar o script implementado em Python faça o seguinte:
+
+Execute o arquivo "Instalar bibliotecas.bat" ou abra o CMD e digite os
+seguintes comandos para instalar as bibliotecas necessárias:
+
+pip install Pillow
+pip install fernet
+pip install cryptography
+
+OBS: Fernet é uma biblioteca de AES128 para Python
+
+-------------------------------------------------------------------------
+
+Agora que já instalamos o que era necessário faça o seguinte:
+
+-Agora abra o programa "AES128.pyw";
+-Escolha o arquivo que será encriptado ou decriptado;
+-Selecione o diretório onde salvar o arquivo;
+-Digite a senha (não esqueça da senha);
+-Clique em "Encriptar" para tornar o arquivo ilegível ou "Decriptar"
+para torná-lo legível novamente.
