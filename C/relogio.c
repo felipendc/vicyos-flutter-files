@@ -1,13 +1,10 @@
 #include <stdio.h>
 #include <windows.h>
-#include <locale.h>
 
 int main()
 {
-
     int h, m, s;
     char *p;
-    int i = 162;
 
     int d = 1000; //Nós adicionamos um delay de 1000 millisegundos pra usar na função sleep.
     printf("Configure a hora: \n");
@@ -45,8 +42,7 @@ int main()
             p = "segundos";
         }
 
-        printf("\nRel%cgio: ", i);
-
+        printf("\nRel%cgio: ", 162);
         printf("\n%02d:%02d e %02d %s", h, m, s, p);
 
         // Isso vai deixar o formato 00:00:00.
