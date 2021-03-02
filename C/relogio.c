@@ -1,12 +1,16 @@
 #include <stdio.h>
 #include <windows.h>
+#include <locale.h>
 
 int main()
 {
+
     int h, m, s;
+    char *p;
+    int i = 162;
 
     int d = 1000; //Nós adicionamos um delay de 1000 millisegundos pra usar na função sleep.
-    printf("Set time: \n");
+    printf("Configure a hora: \n");
     scanf("%d%d%d", &h, &m, &s);
 
     if (h > 12 || m > 60 || s > 60)
@@ -31,9 +35,22 @@ int main()
         {
             h = 1;
         }
-        printf("\n Clock: ");
-        printf("\n %02d:%02d:%02d:", h, m, s); // Isso vai deixar o formato 00:00:00.
-        Sleep(d);                                   // A função sleep diminue a velocidade do while loop de deixa-0 mias parecido a um relógio real.
-        system("cls");                              // Limpa a tela
+
+        if (s <= 1)
+        {
+            p = "segundo";
+        }
+        else
+        {
+            p = "segundos";
+        }
+
+        printf("\nRel%cgio: ", i);
+
+        printf("\n%02d:%02d e %02d %s", h, m, s, p);
+
+        // Isso vai deixar o formato 00:00:00.
+        Sleep(d);      // A função sleep diminue a velocidade do while loop de deixa-0 mias parecido a um relógio real.
+        system("cls"); // Limpa a tela
     }
 }
