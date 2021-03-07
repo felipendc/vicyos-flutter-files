@@ -25,9 +25,21 @@ https://guialinux.uniriotec.br/free/
 # Compacta/descompacta arquivos.
 https://guialinux.uniriotec.br/gzip/
 
+# Compacta/descompacta arquivos.
+https://guialinux.uniriotec.br/zip/
+
+# ZIP
 # HARDWARE
 # Opções de comandos para verificar o hardware da máquina.
 https://guialinux.uniriotec.br/hardware/
+
+# TAR
+# Agrupa/desagrupa arquivos.
+https://guialinux.uniriotec.br/tar/
+
+# GZIP
+# Compacta/descompacta arquivos.
+https://guialinux.uniriotec.br/gzip/
 
 # MOUNT
 # Comando usado para incluir o sistema de arquivos de um
