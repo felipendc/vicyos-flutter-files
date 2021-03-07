@@ -6,7 +6,7 @@ https://guialinux.uniriotec.br/
 
 # WGET
 Baixa arquivos usando os protocolos HTTP, HTTPS e FTP.
-https://www.gnu.org/software/wget/manual/wget.html
+https://linuxize.com/post/wget-command-examples/
 
 # GREP 
 # Procura padrões em um arquivo.
