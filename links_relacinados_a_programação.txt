@@ -6,7 +6,7 @@ https://guialinux.uniriotec.br/
 
 # WGET
 Baixa arquivos usando os protocolos HTTP, HTTPS e FTP.
-https://guialinux.uniriotec.br/wget/
+https://www.gnu.org/software/wget/manual/wget.html
 
 # GREP 
 # Procura padrões em um arquivo.
