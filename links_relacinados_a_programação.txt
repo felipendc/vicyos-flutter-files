@@ -1,4 +1,4 @@
-# Documentação reacionada ao Linux: 
+# Documentação relacionada ao Linux: 
 https://guialinux.uniriotec.br/
 
 # GREP 
