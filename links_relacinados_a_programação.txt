@@ -4,6 +4,10 @@ https://linuxize.com/
 # Documentações relacionada ao Linux: 
 https://guialinux.uniriotec.br/
 
+# WGET
+Baixa arquivos usando os protocolos HTTP, HTTPS e FTP.
+https://guialinux.uniriotec.br/wget/
+
 # GREP 
 # Procura padrões em um arquivo.
 https://guialinux.uniriotec.br/grep/
