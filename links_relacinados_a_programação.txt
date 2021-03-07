@@ -1,0 +1,43 @@
+# Documentação reacionada ao Linux: 
+https://guialinux.uniriotec.br/
+
+# GREP 
+# Procura padrões em um arquivo.
+https://guialinux.uniriotec.br/grep/
+
+# APT-GET
+# Comando para instalar/atualizar/remover aplicativos do Linux.
+https://guialinux.uniriotec.br/apt-get/
+
+# AWK
+#Linguagem de processamento e procura de padrões em textos.
+https://guialinux.uniriotec.br/awk/
+
+# FDISK
+# Aplicativo usado para gerenciar partições.
+https://guialinux.uniriotec.br/fdisk/
+
+ #FREE
+# Exibe a quantidade de memória livre/usada no sistema.
+https://guialinux.uniriotec.br/free/
+
+# GZIP
+# Compacta/descompacta arquivos.
+https://guialinux.uniriotec.br/gzip/
+
+# HARDWARE
+# Opções de comandos para verificar o hardware da máquina.
+https://guialinux.uniriotec.br/hardware/
+
+# MOUNT
+# Comando usado para incluir o sistema de arquivos de um
+https://guialinux.uniriotec.br/mount/
+
+# HWINFO
+#Fornece informações sobre o hardware da máquina.
+https://guialinux.uniriotec.br/hwinfo/
+
+# IFCONFIG
+# Configura interfaces de rede.
+https://guialinux.uniriotec.br/ifconfig/
+
