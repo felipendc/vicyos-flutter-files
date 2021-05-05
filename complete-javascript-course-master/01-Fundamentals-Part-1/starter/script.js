@@ -10,7 +10,6 @@ console.log(23);
 let primeiroNome = "Felipe";
 let primeiro_nome = "Felipe";
 console.log(primeiroNome);
-*/
 
 let javascriptEDivertido = true;
 
@@ -25,3 +24,6 @@ console.log(typeof "Java");
 // de uma variável em uma outra parte do código.
 javascriptEDivertido = "SIM!";
 console.log(javascriptEDivertido);
+*/
+
+// 13
